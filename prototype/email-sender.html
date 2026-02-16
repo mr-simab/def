@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DefVault | Secure Mail Sender</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="email-sender">
+  <main class="page-wrap grid two">
+    <section class="card">
+      <h2>Compose Secure Mail</h2>
+      <form id="emailForm">
+        <input class="input" name="to" placeholder="Recipient" required />
+        <input class="input" name="subject" placeholder="Subject" required />
+        <input class="input" name="attachment" placeholder="Attachment filename (optional)" />
+        <textarea class="input" name="body" placeholder="Message body" rows="6"></textarea>
+        <button class="btn accent" type="submit">Send Through DefVault</button>
+      </form>
+      <div id="mailStatus" class="notice"></div>
+    </section>
+
+    <section class="card">
+      <h2>Transmission Notes</h2>
+      <p>Outgoing messages are routed to secure inspection before delivery. Attachment risk analysis and behavioral signatures are validated in real time.</p>
+      <div class="nav-links">
+        <a class="btn" data-link href="defvault-dashboard.html">View Threat Intelligence</a>
+        <a class="btn" data-link href="bank-dashboard.html">Back to Bank Dashboard</a>
+      </div>
+    </section>
+  </main>
+  <div class="watermark">Created by Team RescueVault</div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

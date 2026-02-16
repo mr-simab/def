@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DefVault | Secure Credential Login</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="bank-login">
+  <main class="page-wrap grid two">
+    <section>
+      <div class="brand">
+        <img src="assets/images/phoenix-logo.svg" alt="DefVault Phoenix" />
+        <h1>Credential Authentication Node</h1>
+      </div>
+      <div class="card">
+        <h2>Operator Login</h2>
+        <form id="loginForm">
+          <input class="input" name="username" placeholder="Username" autocomplete="off" required />
+          <input class="input" name="password" type="password" placeholder="Password" required />
+          <button class="btn accent" type="submit">Authenticate</button>
+        </form>
+        <div id="loginStatus" class="notice"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Secure Terminal</h2>
+      <div id="terminal" class="terminal">Awaiting authentication input...</div>
+    </section>
+  </main>
+  <div class="watermark">Created by Team RescueVault</div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
